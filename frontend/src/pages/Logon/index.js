@@ -3,6 +3,7 @@ import './styles.css';
 import HeroesImg from '../../assets/heroes.png';
 import LogoImg from '../../assets/logo.svg';
 import {FiLogIn} from 'react-icons/fi';
+import {Link} from 'react-router-dom'
 
 export default function Logon(){
 
@@ -15,9 +16,9 @@ export default function Logon(){
                    <h1>Faça seu LOGON</h1>
                    <input placeholder="Sua ID"/>
                    <button className="button" type="submit">Entrar</button>
-               <a href="/register"> 
+               <Link className="backLink" to="/register"> 
                <FiLogIn size={16} color="#E02041"/>
-               Não tenho cadastro</a>
+               Não tenho cadastro</Link>
 
              </form>
 
